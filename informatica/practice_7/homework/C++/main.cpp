@@ -1,80 +1,66 @@
 #include <iostream>
+#include <set>
 #include <Windows.h>
 
 
-void calculateMaxValue(const int* arr, int size, int& mx) {
-    mx = 0; // Инициализация переменной mx
+void CreateAndWorkWithSets(const int* arrC, const int* arrD, int size) {
+
+    std::set<int> A;
+    std::set<int> B;
+    std::set<int> Z;
+
     for (int i = 0; i < size; i++) {
-        if (arr[i] < mx) {
-            mx = arr[i] - 1;
+        A.insert(arrC[i]);
+    }
+    for (int i = 0; i < size; i++) {
+        Z.insert(arrC[i]);
+    }
+
+    for (int i = 0; i < size; i++) {
+        B.insert(arrD[i]);
+    }
+
+    for (int n : A)
+        for (int j : B)
+            if (n == j) {
+                Z.erase(n);
+            }
+    int mx = 0;
+
+    for (int n : Z)
+        if (n < mx) {
+            mx = n - 1;
         }
+    for (int n : Z) {
+        mx = max(n, mx);
     }
-    for (int i = 0; i < size; i++) {
-        mx = max(arr[i], mx);
-    }
+    std::cout << "Максимальный элемент из разности множеств A и B: " << mx << std::endl;
 }
 
-void findArrayWithMaxValue(const int* arrA, const int* arrB, int size1, int size2) {
-    int mxA = 0, mxB = 0;
 
-    // Вычисляем максимальные значения массивов
-    calculateMaxValue(arrA, size1, mxA);
-    calculateMaxValue(arrB, size2, mxB);
+int main() 
+{
+	setlocale(LC_ALL, "Russian");
+    int N; // Размер множества
 
-    // Выводим максимальное значение массива и его порядковый номер
-    if (mxA > mxB) {
-        std::cout << "Массив A имеет наибольшее значение: " << mxA << std::endl;
-        std::cout << "Порядковый номер наибольшего значения массива A: ";
-        for (int i = 0; i < size1; i++) {
-            if (arrA[i] == mxA) {
-                std::cout << i << std::endl;
-            }
-        }
-        std::cout << "Элементы массива А: ";
-        for (int i = 0; i < size1; i++) {
-            std::cout << arrA[i] << " ";
-        }
+    // Ввод размера множества
+    std::cout << "Введите размер множеств (N): ";
+    std::cin >> N;
+    int* C = new int[N]; // Динамическое выделение памяти для массива A
+    int* D = new int[N]; // Динамическое выделение памяти для массива B
+
+    std::cout << "Введите " << N << " элементов для множества A:" << std::endl;
+    for (int i = 0; i < N; i++) {
+        std::cin >> C[i];
     }
-    else {
-        std::cout << "Массив B имеет наибольшее значение: " << mxB << std::endl;
-        std::cout << "Порядковый номер наибольшего значения массива B: ";
-        for (int i = 0; i < size2; i++) {
-            if (arrB[i] == mxB) {
-                std::cout << i << std::endl;
-            }
-        }
-        std::cout << "Элементы массива B: ";
-        for (int i = 0; i < size2; i++) {
-            std::cout << arrB[i] << " ";
-        }
+    std::cout << "Введите " << N << " элементов для множества B:" << std::endl;
+    for (int i = 0; i < N; i++) {
+        std::cin >> D[i];
     }
-    std::cout << std::endl;
-}
-
-int main() {
-    setlocale(LC_ALL, "Russian");
-
-    int* A = new int[5]; // Динамическое выделение памяти для массива A
-    int* B = new int[4]; // Динамическое выделение памяти для массива B
-
-    // Ввод массивов
-    std::cout << "Введите " << 5 << " элементов для массива A:" << std::endl;
-    for (int i = 0; i < 5; i++) {
-        std::cin >> A[i];
-    }
-
-    std::cout << "Введите " << 4 << " элемента для массива B:" << std::endl;
-    for (int i = 0; i < 4; i++) {
-        std::cin >> B[i];
-    }
-
-    // Поиск массива с наибольшим значением
-    findArrayWithMaxValue(A, B, 5, 4);
-
-    // Освобождение выделенной памяти
-    delete[] A;
-    delete[] B;
+    
+    CreateAndWorkWithSets(C, D, N);
 
     system("pause");
     return 0;
-}
+    }
+    
