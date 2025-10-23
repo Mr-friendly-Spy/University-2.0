@@ -1,40 +1,33 @@
 #include <iostream>
 #include <set>
 #include <Windows.h>
+#include <algorithm>
 
 
-void CreateAndWorkWithSets(const int* arrC, const int* arrD, int size) {
-
-    std::set<int> A;
+void CreateAndWorkWithSets(const int* arrC, const int* arrD, int size) { //функци€ дл€ определени€ разницы множеств
+                                                                         // и последующего вычислени€ максимального элемента этой разницы
+    std::set<int> A;//создаЄм множества <чисел> A, B, Z                  //функци€ принимает: массив —, массив D, размер множеств/массивов
     std::set<int> B;
-    std::set<int> Z;
+    std::set<int> differenceSet;
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++) {//перебираем массив — и заполн€ем множество A
         A.insert(arrC[i]);
     }
-    for (int i = 0; i < size; i++) {
-        Z.insert(arrC[i]);
-    }
-
-    for (int i = 0; i < size; i++) {
+    
+    for (int i = 0; i < size; i++) {//перебираем массив D и заполн€ем множество B
         B.insert(arrD[i]);
     }
-
-    for (int n : A)
-        for (int j : B)
-            if (n == j) {
-                Z.erase(n);
-            }
-    int mx = 0;
-
-    for (int n : Z)
-        if (n < mx) {
+    std::set_difference(A.begin(), A.end(), B.begin(), B.end(), std::inserter(differenceSet, differenceSet.begin()));//использем функцию set_difference
+    int mx = 0;                                                                                                      //из библиотеки algorithm
+                                                                                                                     //дл€ вычислени€ разицы множеств
+    for (int n : differenceSet)//перебираем множество Z и находим минимум дл€ mx
+        if (n < mx) {//если элемент множества Z меньше mx, то mx равно этому элементу минус 1
             mx = n - 1;
         }
-    for (int n : Z) {
-        mx = max(n, mx);
+    for (int n : differenceSet) {//перебираем множество Z
+        mx = max(n, mx);//сохран€ем в mx максимальное из (элемента множества Z, mx)
     }
-    std::cout << "ћаксимальный элемент из разности множеств A и B: " << mx << std::endl;
+    std::cout << "ћаксимальный элемент из разницы множеств A и B: " << mx << std::endl;//выводим максимальный эелемент разницы множеств
 }
 
 
