@@ -1,17 +1,5 @@
 def WorksWithSets(A, B):
-
-    Z = set()
-    mx = 0
-    for i in A:
-        Z.add(i)
-
-    for i in A:
-        for j in B:
-            if i == j:
-                Z.discard(i)
-
-    mx = max(Z)
-
+    mx = max(A.difference(B))
     return mx
 
 
