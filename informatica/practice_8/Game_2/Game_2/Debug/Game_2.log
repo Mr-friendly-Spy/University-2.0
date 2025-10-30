@@ -1,0 +1,18 @@
+﻿  GameScene.cpp
+C:\Users\Егор\source\repos\Game_2\TmxLevel.h(6,10): error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory,
+  GameView.cpp
+  (компиляция исходного файла "GameScene.cpp")
+  
+C:\Users\Егор\source\repos\Game_2\GameView.h(3,10): error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory,
+  (компиляция исходного файла "GameView.cpp")
+  
+  main.cpp
+C:\Users\Егор\source\repos\Game_2\GameView.h(3,10): error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory,
+  (компиляция исходного файла "main.cpp")
+  
+  tinyxml2.cpp
+  TmxLevel.cpp
+C:\Users\Егор\source\repos\Game_2\TmxLevel.h(6,10): error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory,
+  (компиляция исходного файла "TmxLevel.cpp")
+  
+  Создание кода...
