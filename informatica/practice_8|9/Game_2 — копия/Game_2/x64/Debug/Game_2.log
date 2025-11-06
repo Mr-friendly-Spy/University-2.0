@@ -1,0 +1,35 @@
+﻿  GameScene.cpp
+C:\Users\Егор\source\repos\Game_2\GameScene.cpp(112,97): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Егор\source\repos\Game_2\GameScene.cpp(112,97): warning C4244:         with
+C:\Users\Егор\source\repos\Game_2\GameScene.cpp(112,97): warning C4244:         [
+C:\Users\Егор\source\repos\Game_2\GameScene.cpp(112,97): warning C4244:             T=float
+C:\Users\Егор\source\repos\Game_2\GameScene.cpp(112,97): warning C4244:         ]
+C:\Users\Егор\source\repos\Game_2\GameScene.cpp(112,79): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Егор\source\repos\Game_2\GameScene.cpp(112,79): warning C4244:         with
+C:\Users\Егор\source\repos\Game_2\GameScene.cpp(112,79): warning C4244:         [
+C:\Users\Егор\source\repos\Game_2\GameScene.cpp(112,79): warning C4244:             T=float
+C:\Users\Егор\source\repos\Game_2\GameScene.cpp(112,79): warning C4244:         ]
+  GameView.cpp
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,75): warning C4244: аргумент: преобразование "const T" в "T", возможна потеря данных
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,75): warning C4244:         with
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,75): warning C4244:         [
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,75): warning C4244:             T=int
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,75): warning C4244:         ]
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,75): warning C4244:         and
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,75): warning C4244:         [
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,75): warning C4244:             T=float
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,75): warning C4244:         ]
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,61): warning C4244: аргумент: преобразование "const T" в "T", возможна потеря данных
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,61): warning C4244:         with
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,61): warning C4244:         [
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,61): warning C4244:             T=int
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,61): warning C4244:         ]
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,61): warning C4244:         and
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,61): warning C4244:         [
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,61): warning C4244:             T=float
+C:\Users\Егор\source\repos\Game_2\GameView.cpp(15,61): warning C4244:         ]
+  main.cpp
+  tinyxml2.cpp
+  TmxLevel.cpp
+  Создание кода...
+  Game_2.vcxproj -> C:\Users\Егор\source\repos\Game_2\x64\Debug\Game_2.exe
