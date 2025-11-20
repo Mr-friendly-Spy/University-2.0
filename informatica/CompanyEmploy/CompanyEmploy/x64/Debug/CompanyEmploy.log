@@ -1,0 +1,17 @@
+﻿  Employee.cpp
+  Engineer.cpp
+C:\Users\ЕГОР\source\repos\CompanyEmploy\Engineer.cpp(4,11): error C2761: "{ctor}": повторное объявление члена запрещено.
+C:\Users\ЕГОР\source\repos\CompanyEmploy\Engineer.cpp(7,8): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  main.cpp
+C:\Users\ЕГОР\source\repos\CompanyEmploy\main.cpp(6,11): error C2512: Employee: нет подходящего конструктора по умолчанию
+      C:\Users\ЕГОР\source\repos\CompanyEmploy\Employee.h(3,7):
+       см. объявление "Employee"
+  
+  Manager.cpp
+C:\Users\ЕГОР\source\repos\CompanyEmploy\Manager.cpp(4,10): error C2511: Manager::Manager(int,double): перегруженная функция-член не найдена в "Manager"
+      C:\Users\ЕГОР\source\repos\CompanyEmploy\Manager.h(5,7):
+       см. объявление "Manager"
+  
+C:\Users\ЕГОР\source\repos\CompanyEmploy\Manager.cpp(7,8): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  Создание кода...
+C:\Users\ЕГОР\source\repos\CompanyEmploy\Employee.cpp(14,1): error C4716: Employee::Salary: должна возвращать значение
