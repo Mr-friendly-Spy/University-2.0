@@ -1,0 +1,8 @@
+﻿  EMPTest.cpp
+C:\Users\ЕГОР\source\repos\EMP\Engineer.cpp(14,8): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  (компиляция исходного файла "/EMPTest.cpp")
+  
+C:\Users\ЕГОР\source\repos\EMP\Manager.cpp(16,11): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  (компиляция исходного файла "/EMPTest.cpp")
+  
+  EMPTest.vcxproj -> C:\Users\ЕГОР\source\repos\EMP\x64\Debug\EMPTest.dll
