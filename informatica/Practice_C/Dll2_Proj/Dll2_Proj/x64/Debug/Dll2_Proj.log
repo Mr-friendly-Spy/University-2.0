@@ -1,0 +1,12 @@
+﻿  MaxFinder.cpp
+C:\Users\ЕГОР\source\repos\Dll2_Proj\MaxFinder.cpp(14,15): warning C4273: FindMaxInt: несовместимое связывание dll
+  (компиляция исходного файла "/MaxFinder.cpp")
+      C:\Users\ЕГОР\source\repos\Dll2_Proj\MaxFinder.h(19,33):
+      см. предыдущее определение "FindMaxInt"
+  
+C:\Users\ЕГОР\source\repos\Dll2_Proj\MaxFinder.cpp(45,23): warning C4273: GetDLLInfo: несовместимое связывание dll
+  (компиляция исходного файла "/MaxFinder.cpp")
+      C:\Users\ЕГОР\source\repos\Dll2_Proj\MaxFinder.h(22,41):
+      см. предыдущее определение "GetDLLInfo"
+  
+  Dll2_Proj.vcxproj -> C:\Users\ЕГОР\source\repos\Dll2_Proj\x64\Debug\Dll2_Proj.dll
