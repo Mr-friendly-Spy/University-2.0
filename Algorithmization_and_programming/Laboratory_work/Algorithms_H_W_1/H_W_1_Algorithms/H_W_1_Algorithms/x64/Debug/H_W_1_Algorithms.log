@@ -1,0 +1,3 @@
+﻿  H_W_1_Algorithms.cpp
+C:\Users\Егор\source\repos\H_W_1_Algorithms\H_W_1_Algorithms.cpp(19,18): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  H_W_1_Algorithms.vcxproj -> C:\Users\Егор\source\repos\H_W_1_Algorithms\x64\Debug\H_W_1_Algorithms.exe
