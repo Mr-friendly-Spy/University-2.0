@@ -1,4 +1,4 @@
-# Функция сортировки пузырьком с визуализацией
+# Функция сортировки пузырьком
 def bubble_sort(array):
     n = len(array)
     for i in range(n - 1):
@@ -72,7 +72,7 @@ def quick_sort(start, end, array):
     quick_sort(left + 1, end, array)
     return array[start:end]
 
-# Функция гномьей сортировки с визуализацией
+# Функция гномьей сортировки
 def gnom_sort(array):
     n = len(array)
     j = 1;
